@@ -1,0 +1,3 @@
+[default]
+SQLALCHEMY_TRACK_MODIFICATIONS = "False"
+SQLALCHEMY_DATABASE_URI = "@format {this.DB_CONNECTION}://{this.DB_USERNAME}:{this.DB_PASSWORD}@{this.DB_HOST}:{this.DB_PORT}/{this.DB_NAME}"

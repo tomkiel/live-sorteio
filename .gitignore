@@ -1,0 +1,26 @@
+
+### Flask ###
+instance/*
+!instance/.gitignore
+.webassets-cache
+
+### Flask.Python Stack ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+.venv
+.idea
+__pycache__
+
+# MacOS
+.DS_Store
+
+# npm
+node_modules
+
+.env
+settings.toml

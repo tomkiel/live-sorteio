@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sorteio nome - {{ app_name }}</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{{ app_url}}/static/favicon.png">
+        <link rel="stylesheet" href="{{  app_url }}/static/css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="name" id="person-name">Nome da pessoa</div>
+                <input type="hidden" value="{{ people }}" id="people" />
+                <button type="button" onclick="onRandomPeople()">Sortear Pessoa</button>
+            </div>
+        </main>
+    </body>
+    <script src="{{  app_url }}/static/js/main.js"></script>
+</html>

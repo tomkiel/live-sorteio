@@ -1,0 +1,10 @@
+### Global variables
+[default]
+APP_DIR = "@format {env[PWD]}/"
+VIEWS_DIR = "app/resources/views/"
+STATIC_DIR = "app/public/static"
+MODELS_DIR = "app/database/models"
+MIGRATIONS_DIR = "app/database/migrations"
+ROUTES_DIR = "app/http/routes"
+CONTROLLERS_DIR = "app/http/controllers"
+SEEDS_DIR = "app/database/seeds"

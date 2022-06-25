@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pessoas cadastradas - {{ app_name }}</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{{ app_url}}/static/favicon.png">
+        <link rel="stylesheet" href="{{  app_url }}/static/css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <a href="{{ app_url }}">Cadastrar pessoa</a>
+                <a href="{{ app_url }}/sorteio">Realizar sorteio</a>
+                <table class="demo">
+                    <caption>Lista de pessoas</caption>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Quando foi criado</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in people %}
+                            <tr>
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.created_at }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+    <script src="{{  app_url }}/static/js/main.js"></script>
+</html>

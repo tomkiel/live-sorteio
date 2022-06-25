@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login - {{ app_name }}</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{{ app_url}}/static/favicon.png">
+        <link rel="stylesheet" href="{{  app_url }}/static/css/style.css">
+    </head>
+    <body>
+        <main>
+            <form>
+                <input type="hidden" name="apiUrl" value="{{ api_url }}" id="apiUrl"/>
+                <div class="form-group">
+                  <label>Usuario</label>
+                  <input type="text" placeholder="Digite seu usuario:"  id="user" name="user"/>
+                </div>
+                <div class="form-group">
+                  <label>Senha</label>
+                  <input type="text" placeholder="Digite sua senha:" id="password" name="password"/>
+                </div>
+                <button type="button" onclick="onSendRequest()">Login</button>
+            </form>
+        </main>
+    </body>
+    <script src="{{  app_url }}/static/js/main.js"></script>
+</html>

@@ -1,0 +1,76 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  min-width: 35vw;
+  border: 1px solid #000;
+  padding: 0.5em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.form-group label {
+
+}
+
+.form-group input {
+  height: 2em;
+}
+
+form button {
+  height: 3em;
+}
+
+.demo {
+  border:1px solid #C0C0C0;
+  border-collapse:collapse;
+  padding:5px;
+}
+.demo th {
+  border:1px solid #C0C0C0;
+  padding:5px;
+  background:#F0F0F0;
+  color: #000;
+}
+.demo td {
+  border:1px solid #C0C0C0;
+  padding:5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  min-width: 250px;
+  width: 35vw;
+}
+
+.container .name {
+  padding: 1em;
+  border: 1px solid #eeee;
+}
+
+.container button {
+  width: 100%;
+  height: 3em;
+}
