@@ -4,7 +4,7 @@ dynaconf_include = ["app/config/*.toml"]
 ### Deafult configurations
 APP_NAME=''
 SECRET_KEY=''
-APP_URL='http://localhost:5000/'
+APP_URL='https://sorteio-app-live.herokuapp.com/'
 
 #### Database
 DB_CONNECTION='sqlite'
