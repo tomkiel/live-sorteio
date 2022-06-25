@@ -17,3 +17,8 @@ def create_app(**config):
     app = construct(**config)
     configuration.load_extensions(app)
     return app
+
+"""
+Create a new app instance.
+"""
+app = create_app()
