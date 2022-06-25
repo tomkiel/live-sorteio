@@ -23,4 +23,4 @@ __pycache__
 node_modules
 
 .env
-settings.toml
+#settings.toml
